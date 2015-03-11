@@ -4,7 +4,7 @@ function create() {
   var counter = 0;
   return {
     increment: function() {
-      counter++;
+    counter++;
     },
     print: function() {
       console.log(counter);
@@ -30,3 +30,4 @@ c.print();     // ==> 1
 11 => toLowerCase()	Returns the calling string value converted to lower case.
 12 => toString()	Returns the string representation of the number's value.
 13 => toUpperCase()	Returns the calling string value converted to uppercase.
+
