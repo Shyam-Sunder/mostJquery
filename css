@@ -1,0 +1,24 @@
+1 => css( name, value ) - Set a single style property to a value on all matched elements.
+
+Example:
+  $("div:first").css("background-color", "blue");
+  
+2 => css( properties ) - Set a key/value object as style properties to all matched elements.
+
+Example:
+ $("#result").css({'color': color,'font-weight' : 'bold','background-color': 'gray'});
+
+3 => innerHeight( ) -Gets the inner height (excludes the border and includes the padding) for the first matched element.
+
+Example:
+  $("div").innerHeight( );
+
+4 => innerWidth( ) - Gets the inner width (excludes the border and includes the padding) for the first matched element.
+
+Example:
+  $("div").innerWidth( );
+  
+5 => scrollTop( val ) - When a value is passed in, the scroll top offset is set to that value on all matched elements.
+
+Example:
+  $("div").scrollTop(300);    
