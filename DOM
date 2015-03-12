@@ -54,6 +54,12 @@
   Example:
      $(this).replaceWith( ('<div class="div"></div>') );
 
-12 => replaceWith( content ) - Replaces all matched elements with the specified HTML or DOM elements.
+13 => text( val ) - Set the text contents of all matched elements.
+      text( ) - Get the combined text contents of all matched elements.
+  Example:
+     $(this).text( "<h1>Click another square</h1>");
+      var content = $(this).text();
+
+14 => wrap( html ) - Wrap each matched element with the specified HTML content.
   Example:
      $(this).replaceWith( ('<div class="div"></div>') );
