@@ -1,0 +1,59 @@
+1 => after( content ) - Insert content after each of the matched elements.
+  Example:
+   $("div").after('<div class="div"></div>' );
+ 
+2 => before( content ) - Insert content before each of the matched elements.
+  Example:
+   $("div").before('<div class="div"></div>' ); 
+ 
+3 => append( content ) - Append content to the inside of every matched element. 
+  Example:
+   $("div").append('<div class="div"></div>' );
+ 
+4 => appendTo( selector ) - Append all of the matched elements to another, specified, set of elements. 
+  Example:
+    $(this).appendTo("#result");
+  
+5 => clone() - Clone matched DOM Elements and select the clones.
+  Example:
+   $(this).clone().insertAfter(this);
+ 
+6 => empty() - Remove all child nodes from the set of matched elements.
+  Example:
+   $("DIV").empty(); 
+
+7 => html( val ) - Set the html contents of every matched element..
+     html( ) - Get the html contents (innerHTML) of the first matched element.
+  Example:
+    $(this).html( "<h1>Click another square</h1>");
+    var content = $(this).html();
+   $("DIV").empty();   
+
+8 => insertAfter( selector ) - Insert all of the matched elements after another, specified, set of elements.
+     insertBefore( selector ) - Insert all of the matched elements before another, specified, set of elements.  
+  Example:
+   $("#source").insertAfter(this); 
+   $("#source").insertBefore(this);
+ 
+9 => prepend( content ) - Prepend content to the inside of every matched element.
+     prependTo( selector ) - Prepend all of the matched elements to another, specified, set of elements.
+  Example:
+    $(this).prepend('<div class="div"></div>' ); 
+     $(this).prependTo("#result");
+
+
+10 => remove( ) - Removes all matched elements from the DOM.
+  Example:
+    $(this).remove( );
+    
+11 => replaceAll( selector ) - Replaces the elements matched by the specified selector with the matched elements.
+  Example:
+    $('<div class="div"></div>').replaceAll( this );
+  
+12 => replaceWith( content ) - Replaces all matched elements with the specified HTML or DOM elements.
+  Example:
+     $(this).replaceWith( ('<div class="div"></div>') );
+
+12 => replaceWith( content ) - Replaces all matched elements with the specified HTML or DOM elements.
+  Example:
+     $(this).replaceWith( ('<div class="div"></div>') );
