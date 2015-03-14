@@ -304,3 +304,41 @@ Example:
   </div> 
 </body>
 </html>
+
+============================================================================================================================
+# Trigger Methods:
+============================================================================================================================
+
+blur( )	Triggers the blur event of each matched element.
+blur( fn )	Bind a function to the blur event of each matched element.
+change( )	Triggers the change event of each matched element.
+change( fn )	Binds a function to the change event of each matched element.
+click( )	Triggers the click event of each matched element.
+click( fn )	Binds a function to the click event of each matched element.
+dblclick( )	Triggers the dblclick event of each matched element.
+dblclick( fn )	Binds a function to the dblclick event of each matched element.
+error( )	Triggers the error event of each matched element.
+error( fn )	Binds a function to the error event of each matched element.
+focus( )	Triggers the focus event of each matched element.
+focus( fn )	Binds a function to the focus event of each matched element.
+keydown( )	Triggers the keydown event of each matched element.
+keydown( fn )	Bind a function to the keydown event of each matched element.
+keypress( )	Triggers the keypress event of each matched element.
+keypress( fn )	Binds a function to the keypress event of each matched element.
+keyup( )	Triggers the keyup event of each matched element.
+keyup( fn )	Bind a function to the keyup event of each matched element.
+load( fn )	Binds a function to the load event of each matched element.
+mousedown( fn )	Binds a function to the mousedown event of each matched element.
+mouseenter( fn )	Bind a function to the mouseenter event of each matched element.
+mouseleave( fn )	Bind a function to the mouseleave event of each matched element.
+mousemove( fn )	Bind a function to the mousemove event of each matched element.
+mouseout( fn )	Bind a function to the mouseout event of each matched element.
+mouseover( fn )	Bind a function to the mouseover event of each matched element.
+mouseup( fn )	Bind a function to the mouseup event of each matched element.
+resize( fn )	Bind a function to the resize event of each matched element.
+scroll( fn )	Bind a function to the scroll event of each matched element.
+select( )	Trigger the select event of each matched element.
+select( fn )	Bind a function to the select event of each matched element.
+submit( )	Trigger the submit event of each matched element.
+submit( fn )	Bind a function to the submit event of each matched element.
+unload( fn )	Binds a function to the unload event of each matched element.
