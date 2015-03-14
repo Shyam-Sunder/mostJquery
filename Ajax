@@ -174,8 +174,7 @@ ________________________________________________________________________________
    $(document).ready(function() {
       $("#driver").click(function(event){
           $.getScript('/jquery/result.js', function(jd) {
-              // Call custom function defined in script
-              CheckJS();
+              // Call custom function defined in script CheckJS();
           });
       });
    });
@@ -189,3 +188,244 @@ ________________________________________________________________________________
    <input type="button" id="driver" value="Load Data" />
 </body>
 </html>
+____________________________________________________________________________________________________________________________
+
+6 => jQuery.post( url, [data], [callback], [type] ) - Load a remote page using an HTTP POST request.
+   Syntex:
+      $.post( url, [data], [callback], [type] );
+   Parameters:
+      + Here is the description of all the parameters used by this method:
+   
+      + url: A string containing the URL to which the request is sent
+   
+      + data:: This optional parameter represents key/value pairs or the return value of the .serialize() function that will be sent to the server.
+   
+      + callback:: This optional parameter represents a function to be executed whenever the data is loaded successfully.
+   
+      + type:: This optional parameter represents a type of data to be returned to callback function:"xml", "html", "script", "json", "jsonp", or "text"
+   
+   Example:
+      // ../jquery/result.php file.
+      <?php
+         if( $_REQUEST["name"] )
+         {
+            $name = $_REQUEST['name'];
+            echo "Welcome ". $name;
+         }
+      ?>
+      
+   <html>
+      <head>
+      <title>the title</title>
+         <script type="text/javascript" 
+         src="/jquery/jquery-1.3.2.min.js"></script>
+         <script type="text/javascript" language="javascript">
+        $(document).ready(function() {
+            $("#driver").click(function(event){
+                $.post( 
+                   "/jquery/result.php",
+                   { name: "Zara" },
+                   function(data) {
+                      $('#stage').html(data);
+                   }
+      
+                );
+            });
+         });
+         </script>
+      </head>
+      <body>
+         <p>Click on the button to load result.html file:</p>
+         <div id="stage" style="background-color:blue;">
+                STAGE
+         </div>
+         <input type="button" id="driver" value="Load Data" />
+      </body>
+   </html>
+____________________________________________________________________________________________________________________________
+
+7 => load( url, [data], [callback] ) - Load HTML from a remote file and inject it into the DOM.
+   Syntex:
+      [selector].load( url, [data], [callback] );
+      
+   Example:
+      //../ /jquery/result.html file.
+      <h1>THIS IS RESULT...</h1>
+      
+      <html>
+      <head>
+      <title>the title</title>
+         <script type="text/javascript" 
+         src="/jquery/jquery-1.3.2.min.js"></script>
+         <script type="text/javascript" language="javascript">
+         $(document).ready(function() {
+            $("#driver").click(function(event){
+                $('#stage').load('/jquery/result.html');
+            });
+         });
+         </script>
+      </head>
+      <body>
+         <p>Click on the button to load result.html file:</p>
+         <div id="stage" style="background-color:blue;">
+                STAGE
+         </div>
+         <input type="button" id="driver" value="Load Data" />
+      </body>
+      </html>   
+______________________________________________________________________________________________________________________________
+
+8 => serialize( )Serializes a set of input elements into a string of data.
+   Syntex:
+      $.serialize( );
+   
+   Example:
+      // ../jquery/serialize.php file.
+      <?php
+         if( $_REQUEST["name"] )
+         {
+            $name = $_REQUEST['name'];
+            echo "Welcome ". $name;
+            $age = $_REQUEST['age'];
+            echo "<br />Your age : ". $age;
+            $sex = $_REQUEST['sex'];
+            echo "<br />Your gender : ". $sex;
+         }
+      ?>
+      
+      <html>
+         <head>
+         <title>the title</title>
+            <script type="text/javascript" 
+            src="/jquery/jquery-1.3.2.min.js"></script>
+            <script type="text/javascript" language="javascript">
+           $(document).ready(function() {
+               $("#driver").click(function(event){
+                   $.post( 
+                      "/jquery/serialize.php",
+                      $("#testform").serialize(),
+         	             function(data) {
+                         $('#stage1').html(data);
+                      }
+                   );
+                   var str = $("#testform").serialize();
+                   $("#stage2").text(str);
+               });
+            });
+            </script>
+         </head>
+         <body>
+            <p>Click on the button to load result.html file:</p>
+            <div id="stage1" style="background-color:blue;">
+                   STAGE - 1
+            </div>
+            <br />
+            <div id="stage2" style="background-color:blue;">
+                   STAGE - 2
+            </div>
+         <form id="testform">
+          <table>
+          <tr>
+          <td><p>Name:</p></td>
+          <td><input type="text" name="name" size="40" /></td>
+          </tr>
+          <tr>
+          <td><p>Age:</p></td>
+          <td><input type="text" name="age" size="40" /></td>
+          </tr>
+           <tr>
+          <td><p>Sex:</p></td>
+          <td> <select name="sex">
+            <option value="Male" selected>Male</option>
+            <option value="Female" selected>Female</option>
+            </select></td>
+          </tr>
+           <tr>
+          <td colspan="2">
+            <input type="button" id="driver" value="Load Data" />
+          </td>
+          </tr>  
+         </table>
+         </form>
+         </body>
+      </html>
+_____________________________________________________________________________________________________________________________
+
+9 => serializeArray( ) - Serializes all forms and form elements like the .serialize() method but returns a JSON data structure for you to work with.
+   Syntex:
+      $.serializeArray( )
+      
+   Example:
+      //.. /jquery/serialize.php file.
+      <?php
+         if( $_REQUEST["name"] )
+         {
+            $name = $_REQUEST['name'];
+            echo "Welcome ". $name;
+            $age = $_REQUEST['age'];
+            echo "<br />Your age : ". $age;
+            $sex = $_REQUEST['sex'];
+            echo "<br />Your gender : ". $sex;
+         }
+      ?>
+   
+   <html>
+      <head>
+      <title>the title</title>
+         <script type="text/javascript" 
+         src="/jquery/jquery-1.3.2.min.js"></script>
+         <script type="text/javascript" language="javascript">
+        $(document).ready(function() {
+            $("#driver").click(function(event){
+                $.post( 
+                   "/jquery/serialize.php",
+                   $("#testform").serializeArray(),
+      	             function(data) {
+                      $('#stage1').html(data);
+                   }
+                );
+                var fields = $("#testform").serializeArray();
+                $("#stage2").empty();
+                jQuery.each(fields, function(i, field){
+                  $("#stage2").append(field.value + " ");
+                });
+            });
+         });
+         </script>
+      </head>
+      <body>
+         <p>Click on the button to load result.html file:</p>
+         <div id="stage1" style="background-color:blue;">
+                STAGE - 1
+         </div>
+         <br />
+         <div id="stage2" style="background-color:blue;">
+                STAGE - 2
+         </div>
+      <form id="testform">
+       <table>
+       <tr>
+       <td><p>Name:</p></td>
+       <td><input type="text" name="name" size="40" /></td>
+       </tr>
+       <tr>
+       <td><p>Age:</p></td>
+       <td><input type="text" name="age" size="40" /></td>
+       </tr>
+        <tr>
+       <td><p>Sex:</p></td>
+       <td> <select name="sex">
+         <option value="Male" selected>Male</option>
+         <option value="Female" selected>Female</option>
+         </select></td>
+       </tr>
+        <tr>
+       <td colspan="2">
+         <input type="button" id="driver" value="Load Data" />
+       </td>
+       </tr>  
+      </table>
+      </form>
+      </body>
+   </html>
+
