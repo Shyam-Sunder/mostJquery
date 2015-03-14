@@ -39,4 +39,4 @@
 _____________________________________________________________________________________________________________________________
 
 2 => ajaxStart( callback ) - Attach a function to be executed whenever an AJAX request begins and there is none already active.
-    
+  Syntex  
