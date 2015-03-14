@@ -309,36 +309,36 @@ Example:
 # Trigger Methods:
 ============================================================================================================================
 
-blur( )	Triggers the blur event of each matched element.
-blur( fn )	Bind a function to the blur event of each matched element.
-change( )	Triggers the change event of each matched element.
-change( fn )	Binds a function to the change event of each matched element.
-click( )	Triggers the click event of each matched element.
-click( fn )	Binds a function to the click event of each matched element.
-dblclick( )	Triggers the dblclick event of each matched element.
-dblclick( fn )	Binds a function to the dblclick event of each matched element.
-error( )	Triggers the error event of each matched element.
-error( fn )	Binds a function to the error event of each matched element.
-focus( )	Triggers the focus event of each matched element.
-focus( fn )	Binds a function to the focus event of each matched element.
-keydown( )	Triggers the keydown event of each matched element.
-keydown( fn )	Bind a function to the keydown event of each matched element.
-keypress( )	Triggers the keypress event of each matched element.
-keypress( fn )	Binds a function to the keypress event of each matched element.
-keyup( )	Triggers the keyup event of each matched element.
-keyup( fn )	Bind a function to the keyup event of each matched element.
-load( fn )	Binds a function to the load event of each matched element.
-mousedown( fn )	Binds a function to the mousedown event of each matched element.
-mouseenter( fn )	Bind a function to the mouseenter event of each matched element.
-mouseleave( fn )	Bind a function to the mouseleave event of each matched element.
-mousemove( fn )	Bind a function to the mousemove event of each matched element.
-mouseout( fn )	Bind a function to the mouseout event of each matched element.
-mouseover( fn )	Bind a function to the mouseover event of each matched element.
-mouseup( fn )	Bind a function to the mouseup event of each matched element.
-resize( fn )	Bind a function to the resize event of each matched element.
-scroll( fn )	Bind a function to the scroll event of each matched element.
-select( )	Trigger the select event of each matched element.
-select( fn )	Bind a function to the select event of each matched element.
-submit( )	Trigger the submit event of each matched element.
-submit( fn )	Bind a function to the submit event of each matched element.
-unload( fn )	Binds a function to the unload event of each matched element.
+1 => blur( ) - Triggers the blur event of each matched element.
+2 => blur( fn ) -	Bind a function to the blur event of each matched element.
+3 => change( ) -	Triggers the change event of each matched element.
+4 => change( fn ) -	Binds a function to the change event of each matched element.
+5 => click( ) -	Triggers the click event of each matched element.
+6 => click( fn ) -	Binds a function to the click event of each matched element.
+7 => dblclick( ) -	Triggers the dblclick event of each matched element.
+8 => dblclick( fn ) -	Binds a function to the dblclick event of each matched element.
+9 => error( ) -	Triggers the error event of each matched element.
+10 => error( fn ) -	Binds a function to the error event of each matched element.
+11 => focus( ) -	Triggers the focus event of each matched element.
+12 => focus( fn ) -	Binds a function to the focus event of each matched element.
+13 => keydown( ) -	Triggers the keydown event of each matched element.
+14 => keydown( fn ) -	Bind a function to the keydown event of each matched element.
+15 => keypress( ) -	Triggers the keypress event of each matched element.
+16 => keypress( fn ) -	Binds a function to the keypress event of each matched element.
+17 => keyup( ) -	Triggers the keyup event of each matched element.
+18 => keyup( fn ) -	Bind a function to the keyup event of each matched element.
+19 => load( fn ) -	Binds a function to the load event of each matched element.
+20 => mousedown( fn ) -	Binds a function to the mousedown event of each matched element.
+21 => mouseenter( fn ) -	Bind a function to the mouseenter event of each matched element.
+22 => mouseleave( fn ) -	Bind a function to the mouseleave event of each matched element.
+23 => mousemove( fn ) -	Bind a function to the mousemove event of each matched element.
+24 => mouseout( fn ) -	Bind a function to the mouseout event of each matched element.
+25 => mouseover( fn ) -	Bind a function to the mouseover event of each matched element.
+26 => mouseup( fn ) -	Bind a function to the mouseup event of each matched element.
+27 => resize( fn ) -	Bind a function to the resize event of each matched element.
+28 => scroll( fn ) -	Bind a function to the scroll event of each matched element.
+29 => select( ) -	Trigger the select event of each matched element.
+30 = > select( fn ) -	Bind a function to the select event of each matched element.
+31 = > submit( ) -	Trigger the submit event of each matched element.
+32 = > submit( fn ) -	Bind a function to the submit event of each matched element.
+33 = > unload( fn ) -	Binds a function to the unload event of each matched element.
